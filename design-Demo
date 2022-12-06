@@ -1,0 +1,61 @@
+
+Features
+
+user can sign into the app with their email and password
+user can follow each other
+user can create posts with photos and /or text
+user can comment on posts
+user can join groups
+user can create posts within groups
+
+Brainstorming
+
+name, email, password
+following => users
+posts, photos, text
+comments
+groupName, groupType, members
+
+Table Ideas
+
+Users
+    firstName
+    lastName
+    email
+    password
+
+Followers
+    user_id
+    followed by => user.id
+
+Posts
+    user.id
+    text
+    date
+
+post_photos
+    post_id
+    url
+
+comment_photos
+    comment_id
+    url
+
+comments
+    post_id
+    user_id
+    text
+    date
+
+groups
+    group_id
+    text
+
+group_posts
+    group_id
+    text
+
+group_posts_photo
+    group_id
+    url
+
